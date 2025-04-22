@@ -1,6 +1,7 @@
 # Godot Agent Book
 
 > [!Tip]
+> This book use [github-godot-rust-book] as a template.
 > This book is deployed **[godot-agent.github.io/book][book-web]**
 
 ## Local setup
@@ -22,3 +23,4 @@ mdbook serve --open
 [mdbook-admonish]: https://github.com/tommilligan/mdbook-admonish
 [mdbook-toc]: https://github.com/badboy/mdbook-toc
 [mdBook]: https://github.com/rust-lang-nursery/mdBook
+[github-godot-rust-book]: https://github.com/godot-rust/book/
