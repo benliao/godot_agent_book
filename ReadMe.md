@@ -1,7 +1,7 @@
 # Godot Agent Book
 
 > [!Tip]
-> This book use [github-godot-rust-book] as a template and is deployed **[godot-agent.github.io/book][book-web]**.
+> This book use [github-godot-rust-book] as a template and is deployed **[benliao.github.io/godot_agent_book][book-web]**.
 
 ## Local setup
 
