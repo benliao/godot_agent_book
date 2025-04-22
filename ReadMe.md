@@ -17,3 +17,8 @@ To run a local server with automatic updates while editing the book, use:
 ```bash
 mdbook serve --open
 ```
+
+[book-web]: https://godot-agent.github.io/book
+[mdbook-admonish]: https://github.com/tommilligan/mdbook-admonish
+[mdbook-toc]: https://github.com/badboy/mdbook-toc
+[mdBook]: https://github.com/rust-lang-nursery/mdBook
