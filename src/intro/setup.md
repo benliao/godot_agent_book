@@ -4,7 +4,7 @@ Before we can demostrate our examples, we need to install some tools.
 
 ## Ollama
 
-[Ollam][ollama] is a convenient LLM infer engine for PC deployment, especially for relatively small models. It is a great tool for local development and testing.
+[Ollama][ollama] is a convenient LLM infer engine for PC deployment, especially for relatively small models. It is a great tool for local development and testing.
 
 QWen 2.5 1.5b is a great model for our examples, as it is small enough to run on most PCs and has a good performance. You can install it with the following command in your terminal after installing Ollama.
 
