@@ -1,0 +1,6 @@
+[book]
+authors = ["benliao"]
+language = "en"
+multilingual = true
+src = "src"
+title = "Godot Agent Book"
