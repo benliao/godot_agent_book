@@ -5,13 +5,13 @@ Due to plugins provided node type, the newly download example may lose it's type
 ```
 
 ```admonish example
-![](../images/NodeLLMTypeLost.png)
+![](../images/node_llm_type_lost.png)
 
 **We can change the node type back as following:**
 
-![](../images/changenodetype.png)
+![](../images/change_type.png)
 
 **Choose NodeLLM**
 
-![](../images/ChangeNode2NodeLLM.png)
+![](../images/change_node_type.png)
 ```
