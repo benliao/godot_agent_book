@@ -7,3 +7,5 @@
     - [NodeLLM Example](./chapter2/nodellm_example.md)
 
 # GodotAgent Plugin Manual
+- [Chapter 3](./chapter_3.md)
+    - [NodeLLM Class](./chapter3/NodeLLM.md)
