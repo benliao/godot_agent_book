@@ -29,7 +29,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.4.36
+      MDBOOK_VERSION: 0.4.48
+      MDBOOK_TOC_VERSION: 0.14.2
+      MDBOOK_ADMONISH_VERSION: 1.19.0
+
     steps:
       - uses: actions/checkout@v4
       - name: Install mdBook
@@ -37,6 +40,8 @@ jobs:
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           rustup update
           cargo install --version ${MDBOOK_VERSION} mdbook
+          cargo install --version ${MDBOOK_TOC_VERSION} mdbook-toc
+          cargo install --version ${MDBOOK_ADMONISH_VERSION} mdbook-admonish
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -58,3 +63,32 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
+  oxipng:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        repository: ${{ github.event.pull_request.head.repo.full_name }}
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: "Run oxipng to reduce PNG sizes"
+      run: |
+        wget https://github.com/shssoichiro/oxipng/releases/download/v${OXIPNG_VERSION}/oxipng-${OXIPNG_VERSION}-x86_64-unknown-linux-musl.tar.gz \
+        -O /tmp/oxipng.tar.gz
+        
+        tar -xvzf /tmp/oxipng.tar.gz -C /tmp
+        mv /tmp/oxipng-${OXIPNG_VERSION}-x86_64-unknown-linux-musl/oxipng ./oxipng
+        chmod +x ./oxipng
+        
+        ./oxipng --version
+        ./oxipng --strip safe --alpha -r src
+
+    # See https://github.com/EndBug/add-and-commit#add--commit.
+    - name: "Commit changes"
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: 'Godot-Rust Automation'
+        author_email: '115185599+GodotRust@users.noreply.github.com'
+        message: 'Auto-reduce PNG sizes'
+        add: 'src/**/*.png'
