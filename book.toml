@@ -10,6 +10,8 @@ title = "Godot Agent Book"
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
+marker = "[toc]"
+max-level = 3
 
 [preprocessor.admonish]
 command = "mdbook-admonish"
@@ -19,4 +21,4 @@ assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
 
 [output.html]
 additional-css = ["./mdbook-admonish.css", "./tomorrow-noon.css"]
-default-theme = "rust"
+default-theme = "light"

@@ -1,6 +1,10 @@
 # NodeLLM
 NodeLLM is a class that extends the Node class in Godot. It is designed to provide a simple interface for working with large language models (LLMs) in a Godot project. It utilizes the signal mechanism of Godot to allow for asynchronous communication with the LLM, making it suitable for game development without blocking the main thread.
 
+```admonish summary
+[toc]
+```
+
 ## Properties
 - `api_type`: The type of API to be used for the LLM. It can be either "OpenAICompitable" or "Ollam".
 - `base_url`: The base URL for the LLM API. It is used to make requests to the LLM.

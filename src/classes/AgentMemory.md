@@ -1,5 +1,10 @@
-# AgentMemory Class
+
+# AgentMemory
 AgentMemory is a class that manages the memory of an agent. It stores the agent's memory and provides methods to add, retrieve, and clear memory. The memory is stored in SurrealDB through the AgentDb class.
+
+```admonish summary
+[toc]
+```
 
 ## Properties
 - `agent_id`: The ID of the agent.
