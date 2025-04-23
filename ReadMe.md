@@ -23,3 +23,10 @@ mdbook serve --open
 [mdbook-toc]: https://github.com/badboy/mdbook-toc
 [mdBook]: https://github.com/rust-lang-nursery/mdBook
 [github-godot-rust-book]: https://github.com/godot-rust/book/
+
+## use pre-commit
+
+```bash
+pip install pre-commit
+pre-commit install
+```
