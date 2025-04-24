@@ -27,7 +27,6 @@ A dictionary containing the memory to be added. The dictionary should contain th
   - `object`: The object of the memory.
   - `location`: The location of the memory.
   - `data`: The data of the memory.
-  - `timestamp`: The timestamp of the memory which is possibly a timestamp of the game world in a simulation game.
 
 ```admonish example
 Agent read a book
@@ -40,7 +39,6 @@ var memory = {
     "object": "book",
     "location": "library",
     "data": "The book is about AI.",
-    "timestamp": gametime.get_datetime()
 }
 agent_memory.add_memory(memory)
 ```
@@ -56,7 +54,6 @@ var memory = {
     "object": "person",
     "location": "park",
     "data": "Let's meet at the park tomorrow.",
-    "timestamp": gametime.get_datetime()
 }
 agent_memory.add_memory(memory)
 ```
@@ -72,7 +69,6 @@ var memory = {
     "object": "something",
     "location": "home",
     "data": "I love this place.",
-    "timestamp": gametime.get_datetime()
 }
 agent_memory.add_memory(memory)
 ```
@@ -88,7 +84,6 @@ var memory = {
     "object": "a meal",
     "location": "home",
     "data": "The meal is delicious.",
-    "timestamp": gametime.get_datetime()
 }
 agent_memory.add_memory(memory)
 ```
@@ -104,7 +99,6 @@ var memory = {
     "object": "",
     "location": "town",
     "data": "It's raining heavily outside.",
-    "timestamp": gametime.get_datetime()
 }
 agent_memory.add_memory(memory)
 ```
