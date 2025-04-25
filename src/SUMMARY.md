@@ -20,6 +20,8 @@
     - [AgentMemory](./classes/AgentMemory.md)
     - [VectorStore](./classes/VectorStore.md)
     - [GameDateTime](./classes/GameDateTime.md)
+    - [Item](./classes/Item.md)
+    - [Inventory](./classes/Inventory.md)
 
 - [Advanced Examples](./advanced_examples/index.md)
     - [Agent with Dialogic2](./advanced_examples/dialogic2/index.md)
